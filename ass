@@ -15,7 +15,7 @@ def letter():
 
 def randomize():
     for i in range(1, (int(count)+1)):
-        print((str(i)+letter()+"."))
+        print((str(i)+letter()))
         print()
         print()
         print(str(i)+"a.")
