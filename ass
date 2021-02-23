@@ -1,28 +1,26 @@
-import random.randint
+import random
 count = input("how many questions do you need")
-count global
 
 def letter():
-	asd = random.randint(0,3)
-	if asd = 0:
-		return "a"
-	elif asd = 1:
-		return "b"
-	elif asd = 2:
-		return "c"
-	elif asd = 3:
-		return "d"
+    asd = random.randint(0,3)
+    if asd == 0:
+        return "a"
+    elif asd == 1:
+        return "b"
+    elif asd == 2:
+        return "c"
+    elif asd == 3:
+        return "d"
 
 
 def randomize():
-	for i in range(count):
-		letter = letter()
-		answer = (str(i)+letter+".")
-		print()
-		print()
-		print(str(i)+"a.")
-		print(str(i)+"b.")
-		print(str(i)+"c.")
-		print(str(i)+"d.")
+    for i in range(1, (int(count)+1)):
+        print((str(i)+letter()+"."))
+        print()
+        print()
+        print(str(i)+"a.")
+        print(str(i)+"b.")
+        print(str(i)+"c.")
+        print(str(i)+"d.")
 
 randomize()
